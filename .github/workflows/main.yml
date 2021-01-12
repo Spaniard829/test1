@@ -21,5 +21,6 @@ jobs:
           date +"%d %b %Y %R" > datetime.txt
           git config --global user.name 'bot'
           git config --global user.email 'bot@users.noreply.github.com'
-          git commit -am "Bot: update datetime.txt"
+          git add datetime.txt
+          git commit -m "Bot: update datetime.txt"
           git push
